@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --bg-default: #0c0d10;
+  --bg-light: #15171d;
+  --another-bg: #14171E;
+  --border-color: #1c1f26;
+  --main: #C2F800;
+  --light-text: #D1D5DB;
+  --unlight-txt: #E5E7EB;
+  --extra-light-text: #9ca3af;
+  --yet-another-text: #8A92A0;
+  --weak-border: #1E2330;
+}
+
+@theme {
+  --color-default: var(--bg-default);
+  --color-bg-light: var(--bg-light);
+  --color-another-bg:  var(--another-bg);
+  --color-border-color: var(--border-color);
+  --color-weak-border: var(--weak-border);
+  --color-main: var(--main);
+  --color-light-text: var(--light-text);
+  --color-unlight-txt: var(--unlight-txt);
+  --color-yet-another-text: var(--yet-another-text);
+  --color-extra-light-text: var(--extra-light-text);
+}
