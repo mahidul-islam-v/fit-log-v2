@@ -4,7 +4,7 @@ import { WorkoutContext } from "@/app/context/WorkoutProvider";
 import React, { useContext } from "react";
 import { LuCalendarPlus2 } from "react-icons/lu";
 import Iworkout from "../interface/wokrout";
-import { Bounce, toast, ToastContainer } from "react-toastify";
+import { Bounce, toast } from "react-toastify";
 
 const AddToPlanButton = ({workout}:{workout:Iworkout}) => {
   const { plans, setPlans } = useContext(WorkoutContext) as {
@@ -49,7 +49,6 @@ const AddToPlanButton = ({workout}:{workout:Iworkout}) => {
         <LuCalendarPlus2 />
         Add to today&apos;s calendar
       </button>
-      <ToastContainer />
     </div>
   );
 };

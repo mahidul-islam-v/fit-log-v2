@@ -2,7 +2,7 @@
 import { WorkoutContext } from "@/app/context/WorkoutProvider";
 import React, { useContext, useState } from "react";
 import { FaCheck } from "react-icons/fa";
-import { Bounce, toast, ToastContainer } from "react-toastify";
+import { Bounce, toast } from "react-toastify";
 
 const MarkAsDoneButton = () => {
   const { myPlan } = useContext(WorkoutContext) as { myPlan: boolean };
@@ -38,7 +38,6 @@ const MarkAsDoneButton = () => {
             <FaCheck />
             Mark As Done
           </button>
-          <ToastContainer />
         </div>
       );
     }
